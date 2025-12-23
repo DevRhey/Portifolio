@@ -16,7 +16,7 @@
       "Relatórios financeiros personalizáveis",
       "API REST para integrações"
     ],
-    "github": "https://github.com/rainan/erp-eventos",
+    "github": "https://github.com/devrhey",
     "demo": null
   },
   {
@@ -36,7 +36,7 @@
       "Interface responsiva e intuitiva",
       "API RESTful documentada"
     ],
-    "github": "https://github.com/rainan/sistema-agendamento",
+    "github": "https://github.com/devrhey",
     "demo": null
   },
   {
@@ -56,7 +56,67 @@
       "Tema customizado com CSS",
       "Aplicação de padrões de projeto (DAO, Singleton, Factory)"
     ],
-    "github": "https://github.com/rainan/javafx-erp",
+    "github": "https://github.com/devrhey",
+    "demo": null
+  },
+  {
+    "id": "api-rest",
+    "title": "API REST de Gestão de Tarefas",
+    "short": "API completa com autenticação JWT e documentação Swagger.",
+    "details": "API RESTful desenvolvida com Spring Boot para gerenciamento de tarefas e projetos. Implementa autenticação e autorização com JWT, documentação automática com Swagger/OpenAPI, validação de dados com Bean Validation, tratamento global de exceções, paginação e ordenação de resultados, e testes unitários e de integração com JUnit e Mockito. A API segue as melhores práticas REST e padrões de mercado para desenvolvimento backend.",
+    "tech": ["Java", "Spring Boot", "Spring Security", "JWT", "Swagger", "JUnit", "H2/PostgreSQL"],
+    "image": "assets/img/header-banner.svg",
+    "features": [
+      "Autenticação JWT com refresh token",
+      "Documentação interativa com Swagger UI",
+      "CRUD completo de projetos e tarefas",
+      "Sistema de permissões baseado em roles",
+      "Paginação e filtros avançados",
+      "Validação robusta de dados",
+      "Tratamento global de exceções",
+      "Cobertura de testes acima de 80%"
+    ],
+    "github": "https://github.com/devrhey",
+    "demo": null
+  },
+  {
+    "id": "ecommerce",
+    "title": "E-commerce Backend",
+    "short": "Plataforma de comércio eletrônico com Spring Boot e microserviços.",
+    "details": "Backend completo para e-commerce desenvolvido com arquitetura de microserviços. Inclui serviços separados para catálogo de produtos, carrinho de compras, processamento de pedidos, pagamentos e notificações. Utiliza Spring Cloud para descoberta de serviços (Eureka), gateway API, circuit breaker (Resilience4j), e comunicação assíncrona com RabbitMQ. Implementa cache com Redis, monitoramento com Actuator, e segurança com OAuth2.",
+    "tech": ["Java", "Spring Boot", "Spring Cloud", "RabbitMQ", "Redis", "PostgreSQL", "Docker"],
+    "image": "assets/img/header-banner.svg",
+    "features": [
+      "Arquitetura de microserviços",
+      "Gateway API com roteamento inteligente",
+      "Service discovery com Eureka",
+      "Circuit breaker para resiliência",
+      "Mensageria assíncrona com RabbitMQ",
+      "Cache distribuído com Redis",
+      "Containerização com Docker",
+      "Monitoramento e health checks"
+    ],
+    "github": "https://github.com/devrhey",
+    "demo": null
+  },
+  {
+    "id": "blog-api",
+    "title": "Blog API com Spring Boot",
+    "short": "API de blog com sistema de comentários, categorias e upload de imagens.",
+    "details": "API REST completa para blog desenvolvida com Spring Boot. Implementa sistema de autores e leitores com diferentes permissões, gestão de posts com categorias e tags, sistema de comentários com moderação, upload de imagens para AWS S3 ou storage local, busca full-text com Elasticsearch, e geração de RSS feed. Utiliza Spring Data JPA para persistência, Spring Security para autenticação, e boas práticas de versionamento de API.",
+    "tech": ["Java", "Spring Boot", "Spring Security", "JPA", "PostgreSQL", "Elasticsearch", "AWS S3"],
+    "image": "assets/img/header-banner.svg",
+    "features": [
+      "Sistema de autores e permissões",
+      "CRUD completo de posts e comentários",
+      "Upload de imagens otimizado",
+      "Busca full-text com Elasticsearch",
+      "Categorias e tags hierárquicas",
+      "Sistema de moderação de comentários",
+      "Geração automática de RSS",
+      "Versionamento de API (v1, v2)"
+    ],
+    "github": "https://github.com/devrhey",
     "demo": null
   }
 ]
