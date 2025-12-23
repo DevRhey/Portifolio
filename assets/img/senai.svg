@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="20" height="20" role="img" aria-label="SENAI">
+  <rect width="64" height="64" rx="8" fill="#0b1220" />
+  <g fill="#06b6d4" font-family="Inter, Arial" font-size="14" font-weight="700" text-anchor="middle">
+    <text x="50%" y="55%">S</text>
+  </g>
+</svg>

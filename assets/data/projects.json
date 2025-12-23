@@ -1,0 +1,62 @@
+[
+  {
+    "id": "erp",
+    "title": "ERP de Locação de Eventos",
+    "short": "Sistema completo para gerenciamento de eventos, clientes e financeiro.",
+    "details": "ERP robusto desenvolvido para empresas de locação de equipamentos para eventos. O sistema oferece gestão completa de clientes, controle de disponibilidade de equipamentos (brinquedos, mesas, cadeiras), agendamento de eventos com calendário integrado, geração automática de contratos, controle financeiro com relatórios detalhados e dashboard analítico. Implementado com arquitetura em camadas (Controller, Service, Repository), seguindo princípios SOLID e padrões de projeto.",
+    "tech": ["Java", "Spring Boot", "Spring Data JPA", "MySQL", "Thymeleaf", "Bootstrap"],
+    "image": "assets/img/header-banner.svg",
+    "features": [
+      "Gestão completa de clientes e fornecedores",
+      "Controle de inventário em tempo real",
+      "Sistema de agendamento com verificação de conflitos",
+      "Geração automática de contratos em PDF",
+      "Dashboard com métricas e gráficos",
+      "Sistema de autenticação e autorização",
+      "Relatórios financeiros personalizáveis",
+      "API REST para integrações"
+    ],
+    "github": "https://github.com/rainan/erp-eventos",
+    "demo": null
+  },
+  {
+    "id": "agendamento",
+    "title": "Sistema de Agendamento",
+    "short": "Plataforma de agendamento com controle inteligente de conflitos.",
+    "details": "Sistema web de agendamento desenvolvido com foco em usabilidade e eficiência. Implementa verificação automática de conflitos por data e horário, gestão de status dos agendamentos (pendente, confirmado, cancelado), visualização em calendário interativo, notificações por email, e filtros avançados de busca. A aplicação utiliza Spring Boot no backend com API RESTful, e frontend responsivo com Bootstrap e JavaScript vanilla para uma experiência fluida.",
+    "tech": ["Java", "Spring Boot", "MySQL", "Bootstrap", "JavaScript", "RESTful API"],
+    "image": "assets/img/header-banner.svg",
+    "features": [
+      "Calendário interativo com drag-and-drop",
+      "Verificação automática de conflitos de horário",
+      "Sistema de notificações por email",
+      "Gestão de múltiplos status de agendamento",
+      "Filtros avançados e busca inteligente",
+      "Exportação de dados para Excel/PDF",
+      "Interface responsiva e intuitiva",
+      "API RESTful documentada"
+    ],
+    "github": "https://github.com/rainan/sistema-agendamento",
+    "demo": null
+  },
+  {
+    "id": "javafx",
+    "title": "Aplicação Desktop JavaFX",
+    "short": "Sistema ERP desktop com interface gráfica moderna usando JavaFX.",
+    "details": "Reimplementação do sistema ERP de eventos utilizando JavaFX para interface desktop, demonstrando domínio completo do paradigma de Programação Orientada a Objetos. O projeto implementa arquitetura MVC, com separação clara entre camadas de apresentação, lógica de negócio e acesso a dados. Utiliza FXML para design de interfaces, Scene Builder para prototipagem visual, TableView com binding de dados, validação de formulários, e integração com banco de dados relacional através de JDBC. Projeto focado em boas práticas de design e código limpo.",
+    "tech": ["JavaFX", "Java", "FXML", "Scene Builder", "POO", "MVC", "MySQL"],
+    "image": "assets/img/header-banner.svg",
+    "features": [
+      "Interface gráfica moderna e intuitiva",
+      "Arquitetura MVC bem definida",
+      "CRUD completo com validações",
+      "TableView com filtros e ordenação",
+      "Formulários dinâmicos com binding",
+      "Relatórios exportáveis",
+      "Tema customizado com CSS",
+      "Aplicação de padrões de projeto (DAO, Singleton, Factory)"
+    ],
+    "github": "https://github.com/rainan/javafx-erp",
+    "demo": null
+  }
+]
