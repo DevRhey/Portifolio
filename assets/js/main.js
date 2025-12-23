@@ -8,7 +8,7 @@
 
   // ========== CONFIGURATION ==========
   const CONFIG = {
-    formEndpoint: '', // Add Formspree or similar endpoint
+    formEndpoint: 'https://formspree.io/f/YOUR_FORM_ID', // Obtenha seu ID em https://formspree.io
     animationDelay: 100,
     scrollOffset: 80,
     navbarScrollThreshold: 100,
