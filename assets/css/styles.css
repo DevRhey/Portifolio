@@ -761,6 +761,12 @@ a:focus-visible {
   box-shadow: var(--shadow-glow-accent);
 }
 
+.linkedin-badge:hover {
+  color: #0a66c2;
+  border-color: rgba(10, 102, 194, 0.4);
+  box-shadow: 0 0 12px rgba(10, 102, 194, 0.25);
+}
+
 .floating-badge:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
@@ -1420,9 +1426,15 @@ a:focus-visible {
 }
 
 .contact-info {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: var(--space-4);
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
 }
 
 .contact-card {
