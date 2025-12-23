@@ -22,7 +22,9 @@ function Ensure-Command($name, $wingetId) {
 }
 
 # Ensure required tools
-Ensure-Command git "Git.Git"
+Ensure-Command git "Git.Git"git add .
+git commit -m "feat: mobile responsivo do avatar e badges lado a lado (<=480 e 481–768)"
+git push
 Ensure-Command gh "GitHub.cli"
 
 # GitHub authentication
