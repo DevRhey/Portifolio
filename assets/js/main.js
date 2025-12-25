@@ -588,7 +588,45 @@
       }
     }
 
+    // Outras Experiências Modal
+    class ExtraExperiencesModal {
+      constructor() {
+        this.trigger = document.getElementById('experiencesTrigger');
+        this.modal = document.getElementById('extraExperiencesModal');
+        if (!this.trigger || !this.modal) return;
+        this.init();
+      }
+
+      init() {
+        const closeBtn = this.modal.querySelector('.modal-close');
+        const overlay = this.modal.querySelector('.modal-overlay');
+
+        const openModal = () => {
+          this.modal.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+          closeBtn?.focus();
+        };
+
+        const closeModal = () => {
+          this.modal.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+          this.trigger?.focus();
+        };
+
+        this.trigger.addEventListener('click', openModal);
+        closeBtn?.addEventListener('click', closeModal);
+        overlay?.addEventListener('click', closeModal);
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && this.modal.getAttribute('aria-hidden') === 'false') {
+            closeModal();
+          }
+        });
+      }
+    }
+
     new SenaiModal();
+    new ExtraExperiencesModal();
 
     // Log initialization
     console.log('%c Portfolio Loaded Successfully ', 'background: #f97316; color: #fff; padding: 4px 8px; border-radius: 4px; font-weight: bold;');

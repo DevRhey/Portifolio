@@ -271,14 +271,33 @@
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <polyline points="22 4 12 14.01 9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              <span>Comprometido com código limpo, testes e documentação de qualidade</span>
+              <div>
+                <strong>Compromissos:</strong>
+                <ul style="margin-top: 8px; padding-left: 20px;">
+                  <li>Código limpo e legível, guiado por SOLID, padrões de projeto e boas práticas Java/Spring.</li>
+                  <li>Qualidade primeiro: testes unitários e de integração, revisão cuidadosa e atenção a segurança.</li>
+                  <li>Entrega confiável: logs claros, monitoramento básico e documentação objetiva para manutenção.</li>
+                  <li>Colaboração e feedback: participação ativa em code reviews e melhoria contínua do time.</li>
+                  <li>Aprendizado constante: estudar, fazer cursos e me especializar para elevar o nível das entregas.</li>
+                </ul>
+              </div>
             </div>
 
             <div class="about-highlight">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              <span>Facilidade com novas tecnologias e uso de IA como ferramenta de aprendizado e desenvolvimento — sempre colocando a mão na massa, pois a IA é uma ferramenta e eu sou o programador</span>
+              <div>
+                <strong>Novas Tecnologias, IA e Agentes:</strong>
+                <ul style="margin-top: 8px; padding-left: 20px;">
+                  <li>Aprendo e adoto novas ferramentas rapidamente, sempre praticando e testando.</li>
+                  <li>Uso IA (ChatGPT, Claude, GitHub Copilot) diariamente como parceira de aprendizado e desenvolvimento.</li>
+                  <li>Aplico agentes para automatizar tarefas, pesquisar soluções e acelerar entregas.</li>
+                  <li>Mantenho visão crítica: valido, testo e entendo cada solução — a IA apoia, eu programo.</li>
+                </ul>
+              </div>
             </div>
 
             <div class="about-highlight">
@@ -305,10 +324,30 @@
               <div>
                 <strong>Projeções para o Futuro:</strong>
                 <ul style="margin-top: 8px; padding-left: 20px;">
-                  <li>Evolução e desenvolvimento contínuo</li>
-                  <li>Aprendizado diário por menor que seja</li>
-                  <li>Alcançar metas e objetivos com consistência e persistência</li>
+                  <li>Estudo contínuo: cursos, certificações e especializações em backend, arquitetura e IA aplicada.</li>
+                  <li>Aprendizado diário e incremental, validado com prática, testes e projetos reais.</li>
+                  <li>Evoluir em arquitetura de sistemas, microserviços, segurança e IA contextualizada.</li>
+                  <li>Construir portfólio sólido com automação, agentes e integrações de APIs para casos reais.</li>
+                  <li>Manter disciplina de código limpo, testes e documentação como base de crescimento.</li>
                 </ul>
+              </div>
+            </div>
+
+            <div class="about-highlight" data-animate>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <div>
+                <strong>Outras Experiências que Moldaram meu Perfil:</strong>
+                <ul style="margin-top: 8px; padding-left: 20px;">
+                  <li>Vivência em chão de fábrica: disciplina, segurança e cumprimento de metas.</li>
+                  <li>Rotinas operacionais e logística: organização, prazos e trabalho sob pressão.</li>
+                  <li>Atendimento e suporte presencial: escuta ativa, clareza e empatia com clientes.</li>
+                  <li>Liderança de turno e colaboração: alinhamento de equipe e resolução rápida de problemas.</li>
+                </ul>
+                <button class="btn btn-secondary" id="experiencesTrigger" aria-controls="extraExperiencesModal" style="margin-top: var(--space-4);">
+                  Ver outras experiências
+                </button>
               </div>
             </div>
           </div>
@@ -428,6 +467,15 @@
                     <li>
                       <strong>Formação Pentest Profissional e Cibersegurança</strong> — DESec
                       <a class="provider-link" href="https://desecsecurity.com" target="_blank" rel="noopener noreferrer">DESec</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="course-group group-ai">
+                  <h4 class="course-heading">Inteligência Artificial</h4>
+                  <ul class="course-list">
+                    <li>
+                      <strong>Formação Inteligência Artificial: Do Zero ao Avançado</strong>
+                      <a class="provider-link" href="https://www.udemy.com" target="_blank" rel="noopener noreferrer">Udemy</a>
                     </li>
                   </ul>
                 </div>
@@ -990,6 +1038,38 @@
             <path d="M10 4V16M10 16L16 10M10 16L4 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Outras Experiências Modal -->
+  <div class="modal" id="extraExperiencesModal" role="dialog" aria-modal="true" aria-labelledby="extraExperiencesTitle" aria-hidden="true">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="extraExperiencesTitle">Outras Experiências Profissionais</h3>
+        <button class="modal-close" aria-label="Fechar modal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-content">
+          <p class="modal-description">
+            Experiências fora da tecnologia que fortaleceram disciplina, colaboração e foco em qualidade.
+          </p>
+          <div class="modal-features">
+            <h4>Vivências</h4>
+            <ul>
+              <li>Operação industrial e chão de fábrica: rotinas de produção, segurança e cumprimento de metas.</li>
+              <li>Logística e organização: gestão de prazos, estoques e trabalho sob pressão.</li>
+              <li>Atendimento e suporte presencial: empatia, escuta ativa e comunicação clara com clientes.</li>
+              <li>Liderança de turno e colaboração: alinhamento de equipe e resolução rápida de problemas.</li>
+              <li>Qualidade e melhoria contínua: atenção a detalhes e busca constante por eficiência.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
