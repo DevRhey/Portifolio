@@ -1490,6 +1490,106 @@ a:focus-visible {
   transform: translateX(4px);
 }
 
+/* ========== COURSES ACCORDION ========== */
+.courses-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.course-accordion-item {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+  transition: all var(--transition-base);
+}
+
+.course-accordion-item:hover {
+  border-color: rgba(249, 115, 22, 0.3);
+}
+
+.course-accordion-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  background: transparent;
+  border: none;
+  color: var(--color-text-primary);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: left;
+}
+
+.course-accordion-header:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.course-accordion-title {
+  flex: 1;
+}
+
+.course-accordion-icon {
+  flex-shrink: 0;
+  transition: transform var(--transition-base);
+  color: var(--color-primary);
+}
+
+.course-accordion-item.active .course-accordion-icon {
+  transform: rotate(180deg);
+}
+
+.course-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-slow);
+}
+
+.course-accordion-item.active .course-accordion-content {
+  max-height: 1000px;
+}
+
+.course-accordion-content .course-list {
+  padding: 0 var(--space-4) var(--space-4) var(--space-4);
+  margin: 0;
+  list-style: none;
+}
+
+.course-accordion-content .course-list li {
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-border-light);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  color: var(--color-text-tertiary);
+}
+
+.course-accordion-content .course-list li:last-child {
+  border-bottom: none;
+}
+
+.course-accordion-content .course-list strong {
+  color: var(--color-text-secondary);
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+.course-accordion-content .provider-link {
+  display: inline-block;
+  margin-left: var(--space-2);
+  font-size: var(--text-xs);
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.course-accordion-content .provider-link:hover {
+  color: var(--color-accent-light);
+}
+
 .contact-icon {
   flex-shrink: 0;
   width: 48px;

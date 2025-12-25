@@ -628,6 +628,36 @@
     new SenaiModal();
     new ExtraExperiencesModal();
 
+    // Courses Accordion
+    class CoursesAccordion {
+      constructor() {
+        this.items = document.querySelectorAll('[data-course-toggle]');
+        if (!this.items.length) return;
+        this.init();
+      }
+
+      init() {
+        this.items.forEach(button => {
+          button.addEventListener('click', () => {
+            const parent = button.closest('.course-accordion-item');
+            const isActive = parent.classList.contains('active');
+            
+            // Close all items
+            document.querySelectorAll('.course-accordion-item').forEach(item => {
+              item.classList.remove('active');
+            });
+
+            // Open clicked item if it wasn't active
+            if (!isActive) {
+              parent.classList.add('active');
+            }
+          });
+        });
+      }
+    }
+
+    new CoursesAccordion();
+
     // Log initialization
     console.log('%c Portfolio Loaded Successfully ', 'background: #f97316; color: #fff; padding: 4px 8px; border-radius: 4px; font-weight: bold;');
   }

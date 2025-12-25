@@ -403,11 +403,18 @@
               </div>
               <div class="info-content">
                 <h3>Cursos Complementares</h3>
+                <p style="font-size: var(--text-sm); color: var(--color-text-tertiary); margin-bottom: var(--space-4);">Clique para expandir cada área</p>
 
-                <div class="courses-grid">
-                <div class="course-group group-java">
-                  <h4 class="course-heading">Java — Fundamentos</h4>
-                  <ul class="course-list">
+                <div class="courses-accordion">
+                <div class="course-accordion-item">
+                  <button class="course-accordion-header" data-course-toggle>
+                    <span class="course-accordion-title">Java — Fundamentos & Backend</span>
+                    <svg class="course-accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <div class="course-accordion-content">
+                    <ul class="course-list">
                     <li>
                       <strong>Algoritmos e Lógica de Programação com Java</strong> — Prof. Nélio Alves
                       <a class="provider-link" href="https://www.udemy.com" target="_blank" rel="noopener noreferrer">Udemy</a>
@@ -416,11 +423,6 @@
                       <strong>Java Completo com POO</strong> — Prof. Nélio Alves
                       <a class="provider-link" href="https://www.udemy.com" target="_blank" rel="noopener noreferrer">Udemy</a>
                     </li>
-                  </ul>
-                </div>
-                <div class="course-group group-java">
-                  <h4 class="course-heading">Java — Web & Backend</h4>
-                  <ul class="course-list">
                     <li>
                       <strong>Java Web</strong> — desenvolvimento de aplicações web em Java
                     </li>
@@ -429,10 +431,18 @@
                       <a class="provider-link" href="https://www.udemy.com" target="_blank" rel="noopener noreferrer">Udemy</a>
                     </li>
                   </ul>
+                  </div>
                 </div>
-                <div class="course-group group-js">
-                  <h4 class="course-heading">JavaScript — Fullstack</h4>
-                  <ul class="course-list">
+
+                <div class="course-accordion-item">
+                  <button class="course-accordion-header" data-course-toggle>
+                    <span class="course-accordion-title">JavaScript — Fullstack</span>
+                    <svg class="course-accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <div class="course-accordion-content">
+                    <ul class="course-list">
                     <li>
                       <strong>B7WEB Fullstack JavaScript</strong> — formação completa em JavaScript fullstack
                       <a class="provider-link" href="https://b7web.com.br" target="_blank" rel="noopener noreferrer">B7WEB</a>
@@ -442,46 +452,96 @@
                       <a class="provider-link" href="https://onebitcode.com" target="_blank" rel="noopener noreferrer">OneBitcode</a>
                     </li>
                   </ul>
+                  </div>
                 </div>
-                <div class="course-group group-python">
-                  <h4 class="course-heading">Python — Fullstack</h4>
-                  <ul class="course-list">
+
+                <div class="course-accordion-item">
+                  <button class="course-accordion-header" data-course-toggle>
+                    <span class="course-accordion-title">Python — Fullstack</span>
+                    <svg class="course-accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <div class="course-accordion-content">
+                    <ul class="course-list">
                     <li>
                       <strong>EBAC Fullstack Python</strong> — formação fullstack em Python
                       <a class="provider-link" href="https://www.ebaconline.com.br" target="_blank" rel="noopener noreferrer">EBAC</a>
                     </li>
                   </ul>
+                  </div>
                 </div>
-                <div class="course-group group-android">
-                  <h4 class="course-heading">Android — Mobile</h4>
-                  <ul class="course-list">
+
+                <div class="course-accordion-item">
+                  <button class="course-accordion-header" data-course-toggle>
+                    <span class="course-accordion-title">Android — Mobile</span>
+                    <svg class="course-accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <div class="course-accordion-content">
+                    <ul class="course-list">
                     <li>
                       <strong>Desenvolvimento Android Completo — Kotlin & Java</strong>
                       <a class="provider-link" href="https://www.udemy.com" target="_blank" rel="noopener noreferrer">Udemy</a>
                     </li>
                   </ul>
+                  </div>
                 </div>
-                <div class="course-group group-security">
-                  <h4 class="course-heading">Cibersegurança</h4>
-                  <ul class="course-list">
+
+                <div class="course-accordion-item">
+                  <button class="course-accordion-header" data-course-toggle>
+                    <span class="course-accordion-title">Cibersegurança</span>
+                    <svg class="course-accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <div class="course-accordion-content">
+                    <ul class="course-list">
                     <li>
                       <strong>Formação Pentest Profissional e Cibersegurança</strong> — DESec
                       <a class="provider-link" href="https://desecsecurity.com" target="_blank" rel="noopener noreferrer">DESec</a>
                     </li>
                   </ul>
+                  </div>
                 </div>
-                <div class="course-group group-ai">
-                  <h4 class="course-heading">Inteligência Artificial</h4>
-                  <ul class="course-list">
+
+                <div class="course-accordion-item">
+                  <button class="course-accordion-header" data-course-toggle>
+                    <span class="course-accordion-title">Inteligência Artificial</span>
+                    <svg class="course-accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <div class="course-accordion-content">
+                    <ul class="course-list">
                     <li>
                       <strong>Formação Inteligência Artificial: Do Zero ao Avançado</strong>
                       <a class="provider-link" href="https://www.udemy.com" target="_blank" rel="noopener noreferrer">Udemy</a>
                     </li>
                   </ul>
+                  </div>
+                </div>
+
+                <div class="course-accordion-item">
+                  <button class="course-accordion-header" data-course-toggle>
+                    <span class="course-accordion-title">Análise de Dados</span>
+                    <svg class="course-accordion-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <div class="course-accordion-content">
+                    <ul class="course-list">
+                    <li>
+                      <strong>POWER BI Expert na Prática</strong>
+                      <a class="provider-link" href="https://www.viscari.com.br/pbi-expert" target="_blank" rel="noopener noreferrer">Viscari Cursos</a>
+                    </li>
+                  </ul>
+                  </div>
                 </div>
                 </div>
 
-                <span class="info-meta">Atualização contínua e prática aplicada</span>
+                <span class="info-meta" style="margin-top: var(--space-4); display: block;">Atualização contínua e prática aplicada</span>
               </div>
             </div>
           </div>
