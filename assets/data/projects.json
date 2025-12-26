@@ -2,7 +2,7 @@
   {
     "id": "erp",
     "title": "ERP de Locação de Eventos",
-    "short": "Sistema completo para gerenciamento de eventos, clientes e financeiro.",
+    "short": "Sistema completo para gerenciamento de eventos, clientes e financeiro com Java.",
     "details": "ERP robusto desenvolvido para empresas de locação de equipamentos para eventos. O sistema oferece gestão completa de clientes, controle de disponibilidade de equipamentos (brinquedos, mesas, cadeiras), agendamento de eventos com calendário integrado, geração automática de contratos, controle financeiro com relatórios detalhados e dashboard analítico. Implementado com arquitetura em camadas (Controller, Service, Repository), seguindo princípios SOLID e padrões de projeto.",
     "tech": ["Java", "Spring Boot", "Spring Data JPA", "MySQL", "Thymeleaf", "Bootstrap"],
     "image": "assets/img/header-banner.svg",
@@ -20,51 +20,11 @@
     "demo": null
   },
   {
-    "id": "agendamento",
-    "title": "Sistema de Agendamento",
-    "short": "Plataforma de agendamento com controle inteligente de conflitos.",
-    "details": "Sistema web de agendamento desenvolvido com foco em usabilidade e eficiência. Implementa verificação automática de conflitos por data e horário, gestão de status dos agendamentos (pendente, confirmado, cancelado), visualização em calendário interativo, notificações por email, e filtros avançados de busca. A aplicação utiliza Spring Boot no backend com API RESTful, e frontend responsivo com Bootstrap e JavaScript vanilla para uma experiência fluida.",
-    "tech": ["Java", "Spring Boot", "MySQL", "Bootstrap", "JavaScript", "RESTful API"],
-    "image": "assets/img/header-banner.svg",
-    "features": [
-      "Calendário interativo com drag-and-drop",
-      "Verificação automática de conflitos de horário",
-      "Sistema de notificações por email",
-      "Gestão de múltiplos status de agendamento",
-      "Filtros avançados e busca inteligente",
-      "Exportação de dados para Excel/PDF",
-      "Interface responsiva e intuitiva",
-      "API RESTful documentada"
-    ],
-    "github": "https://github.com/devrhey",
-    "demo": null
-  },
-  {
-    "id": "javafx",
-    "title": "Aplicação Desktop JavaFX",
-    "short": "Sistema ERP desktop com interface gráfica moderna usando JavaFX.",
-    "details": "Reimplementação do sistema ERP de eventos utilizando JavaFX para interface desktop, demonstrando domínio completo do paradigma de Programação Orientada a Objetos. O projeto implementa arquitetura MVC, com separação clara entre camadas de apresentação, lógica de negócio e acesso a dados. Utiliza FXML para design de interfaces, Scene Builder para prototipagem visual, TableView com binding de dados, validação de formulários, e integração com banco de dados relacional através de JDBC. Projeto focado em boas práticas de design e código limpo.",
-    "tech": ["JavaFX", "Java", "FXML", "Scene Builder", "POO", "MVC", "MySQL"],
-    "image": "assets/img/header-banner.svg",
-    "features": [
-      "Interface gráfica moderna e intuitiva",
-      "Arquitetura MVC bem definida",
-      "CRUD completo com validações",
-      "TableView com filtros e ordenação",
-      "Formulários dinâmicos com binding",
-      "Relatórios exportáveis",
-      "Tema customizado com CSS",
-      "Aplicação de padrões de projeto (DAO, Singleton, Factory)"
-    ],
-    "github": "https://github.com/devrhey",
-    "demo": null
-  },
-  {
     "id": "api-rest",
     "title": "API REST de Gestão de Tarefas",
-    "short": "API completa com autenticação JWT e documentação Swagger.",
+    "short": "API completa com autenticação JWT, documentação Swagger e arquitetura Java.",
     "details": "API RESTful desenvolvida com Spring Boot para gerenciamento de tarefas e projetos. Implementa autenticação e autorização com JWT, documentação automática com Swagger/OpenAPI, validação de dados com Bean Validation, tratamento global de exceções, paginação e ordenação de resultados, e testes unitários e de integração com JUnit e Mockito. A API segue as melhores práticas REST e padrões de mercado para desenvolvimento backend.",
-    "tech": ["Java", "Spring Boot", "Spring Security", "JWT", "Swagger", "JUnit", "H2/PostgreSQL"],
+    "tech": ["Java", "Spring Boot", "Spring Security", "JWT", "Swagger", "JUnit", "PostgreSQL"],
     "image": "assets/img/header-banner.svg",
     "features": [
       "Autenticação JWT com refresh token",
@@ -80,41 +40,81 @@
     "demo": null
   },
   {
-    "id": "ecommerce",
-    "title": "E-commerce Backend",
-    "short": "Plataforma de comércio eletrônico com Spring Boot e microserviços.",
-    "details": "Backend completo para e-commerce desenvolvido com arquitetura de microserviços. Inclui serviços separados para catálogo de produtos, carrinho de compras, processamento de pedidos, pagamentos e notificações. Utiliza Spring Cloud para descoberta de serviços (Eureka), gateway API, circuit breaker (Resilience4j), e comunicação assíncrona com RabbitMQ. Implementa cache com Redis, monitoramento com Actuator, e segurança com OAuth2.",
-    "tech": ["Java", "Spring Boot", "Spring Cloud", "RabbitMQ", "Redis", "PostgreSQL", "Docker"],
+    "id": "data-analysis",
+    "title": "Análise de Dados com Python e Visualização",
+    "short": "Projeto completo de análise exploratória de dados e visualização com bibliotecas Python.",
+    "details": "Projeto de Data Science focado em análise exploratória de dados (EDA) com bibliotecas Python como Pandas, NumPy e Matplotlib. Realiza limpeza e tratamento de dados, identificação de padrões e anomalias, análise estatística multivariada, e criação de visualizações interativas com Plotly. Inclui relatórios em Jupyter Notebooks bem documentados, storytelling de dados e insights acionáveis. Demonstra capacidade de transformar dados brutos em informações estratégicas.",
+    "tech": ["Python", "Pandas", "NumPy", "Matplotlib", "Plotly", "Jupyter", "Scipy"],
     "image": "assets/img/header-banner.svg",
     "features": [
-      "Arquitetura de microserviços",
-      "Gateway API com roteamento inteligente",
-      "Service discovery com Eureka",
-      "Circuit breaker para resiliência",
-      "Mensageria assíncrona com RabbitMQ",
-      "Cache distribuído com Redis",
-      "Containerização com Docker",
-      "Monitoramento e health checks"
+      "Análise Exploratória Completa (EDA)",
+      "Limpeza e Preparação de Dados",
+      "Análise Estatística Multivariada",
+      "Visualizações Interativas com Plotly",
+      "Identificação de Outliers e Anomalias",
+      "Correlação e Causalidade",
+      "Relatórios em Jupyter Notebooks",
+      "Documentação e Storytelling de Dados"
     ],
     "github": "https://github.com/devrhey",
     "demo": null
   },
   {
-    "id": "blog-api",
-    "title": "Blog API com Spring Boot",
-    "short": "API de blog com sistema de comentários, categorias e upload de imagens.",
-    "details": "API REST completa para blog desenvolvida com Spring Boot. Implementa sistema de autores e leitores com diferentes permissões, gestão de posts com categorias e tags, sistema de comentários com moderação, upload de imagens para AWS S3 ou storage local, busca full-text com Elasticsearch, e geração de RSS feed. Utiliza Spring Data JPA para persistência, Spring Security para autenticação, e boas práticas de versionamento de API.",
-    "tech": ["Java", "Spring Boot", "Spring Security", "JPA", "PostgreSQL", "Elasticsearch", "AWS S3"],
+    "id": "sentiment-analysis",
+    "title": "Análise de Sentimentos em Redes Sociais",
+    "short": "NLP para análise de sentimentos em textos com BERT e visualização de tendências.",
+    "details": "Projeto de Processamento de Linguagem Natural (NLP) que analisa sentimentos em comentários e posts de redes sociais. Utiliza modelos pré-treinados (BERT, RoBERTa) com fine-tuning para classificação de sentimentos (positivo, negativo, neutro). Implementa pipeline completo: coleta de dados via API de redes sociais, pré-processamento de texto (tokenização, remoção de stopwords, lemmatização), classificação com transformers, e visualização de tendências temporais com dashboard interativo.",
+    "tech": ["Python", "Transformers (Hugging Face)", "BERT", "NLTK", "Pandas", "Plotly", "Scikit-learn"],
     "image": "assets/img/header-banner.svg",
     "features": [
-      "Sistema de autores e permissões",
-      "CRUD completo de posts e comentários",
-      "Upload de imagens otimizado",
-      "Busca full-text com Elasticsearch",
-      "Categorias e tags hierárquicas",
-      "Sistema de moderação de comentários",
-      "Geração automática de RSS",
-      "Versionamento de API (v1, v2)"
+      "Fine-tuning de BERT para Sentimentos",
+      "Pré-processamento de Texto (NLTK, spaCy)",
+      "Coleta de Dados de APIs Sociais",
+      "Classificação em Tempo Real",
+      "Análise de Tendências Temporais",
+      "Word Cloud de Termos Frequentes",
+      "Dashboard Interativo com Filtros",
+      "Exportação de Relatórios"
+    ],
+    "github": "https://github.com/devrhey",
+    "demo": null
+  },
+  {
+    "id": "ml-predictor",
+    "title": "Modelo de IA para Previsão de Vendas",
+    "short": "Sistema híbrido: Machine Learning em Python integrado a API REST Java para previsões em tempo real.",
+    "details": "Sistema de inteligência artificial desenvolvido com Python e TensorFlow para previsão de demanda e vendas. Combina técnicas de Machine Learning (LSTM, XGBoost) com análise de séries temporais para prever padrões de vendas. O modelo foi integrado a uma API REST em Spring Boot que consome as previsões em tempo real, apresentando resultados em dashboard interativo. Inclui pipeline de dados completo: coleta, limpeza, normalização, treinamento e validação do modelo. Demonstra integração completa entre Backend Java e IA.",
+    "tech": ["Python", "TensorFlow", "Pandas", "Scikit-learn", "Java", "Spring Boot", "PostgreSQL", "REST API"],
+    "image": "assets/img/header-banner.svg",
+    "features": [
+      "Modelo LSTM para séries temporais",
+      "XGBoost para ensemble learning",
+      "Pipeline ETL automatizado em Python",
+      "Integração com API REST em Java Spring Boot",
+      "Dashboard de previsões em tempo real",
+      "Métricas de performance (RMSE, MAE, R²)",
+      "Retreinamento automático do modelo",
+      "Banco de dados PostgreSQL para histórico"
+    ],
+    "github": "https://github.com/devrhey",
+    "demo": null
+  },
+  {
+    "id": "recommendation-system",
+    "title": "Sistema de Recomendação com IA",
+    "short": "Motor de recomendações híbrido: ML em Python + Backend Java + Cache Redis para alta performance.",
+    "details": "Sistema inteligente de recomendação desenvolvido com algoritmos de Machine Learning (Collaborative Filtering, Content-Based Filtering e Hybrid Approach). Implementado em Python usando Scikit-learn, Surprise e TensorFlow para criar modelos preditivos baseados em comportamento de usuários e características de produtos. O backend em Spring Boot consome as recomendações via API REST e apresenta sugestões personalizadas em tempo real com cache Redis. Inclui matriz de similaridade, SVD (Singular Value Decomposition), e algoritmo de vizinhos mais próximos (KNN) para otimizar precisão.",
+    "tech": ["Python", "Scikit-learn", "Surprise", "TensorFlow", "Java", "Spring Boot", "Redis", "PostgreSQL"],
+    "image": "assets/img/header-banner.svg",
+    "features": [
+      "Collaborative Filtering (User-Based e Item-Based)",
+      "Content-Based Filtering com TF-IDF",
+      "Hybrid Recommendation System",
+      "SVD e Matrix Factorization em Python",
+      "Backend Java Spring Boot para API",
+      "Cache de recomendações com Redis",
+      "A/B Testing de algoritmos",
+      "Métricas de avaliação (Precision@K, Recall@K, NDCG)"
     ],
     "github": "https://github.com/devrhey",
     "demo": null

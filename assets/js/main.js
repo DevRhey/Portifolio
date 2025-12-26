@@ -249,47 +249,70 @@
       this.modal = document.getElementById('projectModal');
       this.projects = [];
       
-      if (!this.grid || !this.modal) return;
+      console.log('ProjectsManager: grid =', this.grid);
+      console.log('ProjectsManager: modal =', this.modal);
+      
+      if (!this.grid || !this.modal) {
+        console.warn('ProjectsManager: grid ou modal não encontrado!');
+        return;
+      }
       this.init();
     }
 
     async init() {
+      console.log('ProjectsManager: Iniciando...');
       await this.loadProjects();
       this.setupModal();
     }
 
     async loadProjects() {
       try {
+        console.log('ProjectsManager: Carregando projetos...');
+        
+        // Mostrar loading
+        this.grid.innerHTML = '<div class="loading-projects">Carregando projetos...</div>';
+        
         const response = await fetch('assets/data/projects.json');
-        if (!response.ok) throw new Error('Failed to load projects');
+        if (!response.ok) throw new Error(`Failed to load projects: ${response.status}`);
         
         this.projects = await response.json();
+        console.log(`ProjectsManager: ${this.projects.length} projetos carregados`, this.projects);
+        
+        if (!Array.isArray(this.projects) || this.projects.length === 0) {
+          throw new Error('Nenhum projeto encontrado');
+        }
+        
         this.renderProjects();
       } catch (error) {
         console.error('Error loading projects:', error);
         this.grid.innerHTML = `
-          <div class="error-message">
-            <p>Não foi possível carregar os projetos. Tente novamente mais tarde.</p>
+          <div class="error-message" style="grid-column: 1 / -1; text-align: center; padding: var(--space-8); color: var(--color-text-secondary);">
+            <p>❌ Não foi possível carregar os projetos.</p>
+            <p style="font-size: 0.875rem; margin-top: var(--space-2);">Erro: ${error.message}</p>
           </div>
         `;
       }
     }
 
     renderProjects() {
+      console.log('ProjectsManager: Renderizando projetos...');
       this.grid.innerHTML = '';
 
       this.projects.forEach((project, index) => {
         const card = this.createProjectCard(project, index);
         this.grid.appendChild(card);
       });
+      
+      console.log(`ProjectsManager: ${this.projects.length} cards adicionados ao grid`);
     }
 
     createProjectCard(project, index) {
       const article = document.createElement('article');
       article.className = 'project-card';
-      article.setAttribute('data-animate', '');
       article.setAttribute('role', 'listitem');
-      article.style.transitionDelay = `${index * 0.1}s`;
+      article.style.opacity = '0';
+      article.style.transform = 'translateY(20px)';
+      article.style.animation = `fadeInUp 0.6s ease-out ${index * 0.1}s forwards`;
 
       const image = project.image || 'assets/img/header-banner.svg';
       
@@ -318,7 +341,32 @@
       const button = article.querySelector('[data-project-id]');
       button.addEventListener('click', () => this.openModal(project));
 
+      // Summary under the card
+      const summary = document.createElement('div');
+      summary.className = 'project-summary';
+      summary.innerHTML = `<strong>Resumo:</strong> ${this.getProjectSummary(project)}`;
+      article.appendChild(summary);
+
       return article;
+    }
+
+    getProjectSummary(project) {
+      const tech = Array.isArray(project.tech) ? project.tech : [];
+      const t = (name) => tech.includes(name);
+
+      const hasJava = t('Java') || t('Spring Boot');
+      const hasPython = t('Python');
+      const aiLibs = ['TensorFlow','Keras','Scikit-learn','NLTK','spaCy','Transformers (Hugging Face)','XGBoost','Pandas','NumPy','Plotly','LangChain','OpenAI/LLaMA','Sentence Transformers'];
+      const hasAI = aiLibs.some(l => tech.includes(l));
+
+      let categoria;
+      if (hasJava && (hasPython || hasAI)) categoria = 'Integração Java + IA/Dados';
+      else if (hasPython || hasAI) categoria = 'IA/Dados';
+      else if (hasJava) categoria = 'Backend Java';
+      else categoria = 'Projeto Full‑stack';
+
+      const principais = tech.slice(0, 3).join(', ');
+      return `${categoria} • Principais: ${principais}`;
     }
 
     setupModal() {
