@@ -945,14 +945,20 @@ a:focus-visible {
 .about-content {
   display: grid;
   gap: var(--space-12);
-  align-items: start;
+  align-items: center;
+  justify-items: center;
 }
 
 @media (min-width: 1024px) {
   .about-content {
-    grid-template-columns: 1.5fr 1fr;
-    gap: var(--space-16);
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-12);
   }
+}
+
+.about-text {
+  max-width: 900px;
+  text-align: center;
 }
 
 .about-text p:last-child {
@@ -962,7 +968,8 @@ a:focus-visible {
 .about-highlight {
   display: flex;
   gap: var(--space-4);
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   padding: var(--space-5);
   background: rgba(249, 115, 22, 0.05);
   border-left: 3px solid var(--color-primary);
@@ -1337,6 +1344,7 @@ a:focus-visible {
 .projects-grid {
   display: grid;
   gap: var(--space-8);
+  align-items: stretch;
 }
 
 @media (min-width: 768px) {
@@ -1360,6 +1368,7 @@ a:focus-visible {
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .project-card:hover {
@@ -1395,6 +1404,8 @@ a:focus-visible {
   flex: 1;
   display: flex;
   flex-direction: column;
+  gap: var(--space-3);
+  text-align: left;
 }
 
 .project-summary {
@@ -1403,6 +1414,7 @@ a:focus-visible {
   padding: var(--space-3) 0 var(--space-5);
   font-size: var(--text-sm);
   color: var(--color-text-tertiary);
+  text-align: left;
 }
 
 .project-title {
@@ -1440,6 +1452,7 @@ a:focus-visible {
   gap: var(--space-3);
   padding-top: var(--space-4);
   border-top: 1px solid var(--color-border-light);
+  margin-top: auto;
 }
 
 .project-link {
@@ -1483,12 +1496,13 @@ a:focus-visible {
   gap: var(--space-12);
   max-width: 1100px;
   margin: 0 auto;
+  justify-items: center;
 }
 
 @media (min-width: 1024px) {
   .contact-wrapper {
-    grid-template-columns: 1fr 1.5fr;
-    gap: var(--space-16);
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-12);
   }
 }
 
@@ -1496,6 +1510,7 @@ a:focus-visible {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-4);
+  justify-items: stretch;
 }
 
 @media (max-width: 768px) {
